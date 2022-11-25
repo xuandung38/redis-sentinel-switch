@@ -1,0 +1,36 @@
+{
+    "authors": [
+      {
+        "name": "Xuan Dung, Ho",
+        "email": "me@hxd.vn"
+      }
+    ],
+    "description": "Redis sentinel switch, auto switch config redis standalone and sentinel",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "name": "hxd/redis-sentinel-switch",
+    "autoload": {
+      "psr-4": {
+        "Hxd\\RedisSentinelSwitch\\": "src/"
+      }
+    },
+    "config": {
+      "sort-packages": true
+    },
+    "require": {
+      "php": "^7.1|^7.2|^7.3|^7.4|^8.0|^8.1",
+      "predis/predis": "^2.0"
+    },
+    "require-dev": {
+      "illuminate/support": "6.x|^8.18|^9.0"
+    },
+    "type": "library",
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hxd\\RedisSentinelSwitch\\RedisDriverSwitchProvider"
+            ]
+        }
+    }
+  }
