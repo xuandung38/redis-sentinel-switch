@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Hxd\RedisSentinelSwitch;
 
 use Illuminate\Support\ServiceProvider;
 
