@@ -8,10 +8,10 @@ class RedisDriverSwitchProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../../config/redis-switch.php', 'redis-switch');
+        $this->mergeConfigFrom(__DIR__ . '/../config/redis-switch.php', 'redis-switch');
 
         if ($this->app->runningInConsole()) {
-            $this->publishes([__DIR__ . '/../../config/redis-switch.php' => config_path('redis-switch.php')], 'config');
+            $this->publishes([__DIR__ . '/../config/redis-switch.php' => config_path('redis-switch.php')], 'config');
         }
 
         $this->overWriteConfig();
